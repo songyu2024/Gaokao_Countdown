@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高考倒计时</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="bg" src="img/bg.jpg" alt="Background">
+    
+    <div class="container">
+        <!-- 天气卡片 -->
+        <div class="liquidGlass-wrapper weather-card">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>
+            <div class="liquidGlass-text">
+                <div id="weather" class="weather-content">
+                    <div id="weather-type" class="weather-type">晴</div>
+                    <div id="weather-temp" class="weather-temp">25°C</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 高考倒计时卡片 -->
+        <div class="liquidGlass-wrapper glass-card">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>
+            <div class="liquidGlass-text">
+                <div class="card-content">
+                    <div class="title">高考倒计时</div>
+                    <div class="countdown">
+                        <span class="num" id="days">000</span>
+                        <span class="label">D</span>
+                        <span class="num" id="hours">00</span>
+                        <span class="label">H</span>
+                        <span class="num" id="minutes">00</span>
+                        <span class="label">MIN</span>
+                        <span class="num" id="seconds">00</span>
+                        <span class="label">S</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 一言卡片 -->
+        <div class="liquidGlass-wrapper quote-card">
+            <div class="liquidGlass-effect"></div>
+            <div class="liquidGlass-tint"></div>
+            <div class="liquidGlass-shine"></div>  
+            <div class="liquidGlass-text">
+                <div id="quote" class="quote">加载中...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVG滤镜 -->
+    <svg class="hidden-svg">
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
